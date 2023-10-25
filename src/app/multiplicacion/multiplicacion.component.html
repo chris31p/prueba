@@ -1,0 +1,27 @@
+<p class="m-3">Ejercicio 4!</p>
+<div class="div">
+  <h1 class="m-3">Tabla de Multiplicar</h1>
+  <p class="m-3">
+    Crear un programa que permita mostrar la tabla de multiplicar de un número
+    ingresado por teclado, tomando en cuenta lo siguiente:
+    <br />
+    a. El usuario deberá indicar hasta que número de la tabla desea mostrar
+    <br />
+    b. Los números ingresados únicamente deben ser enteros
+  </p>
+  <div class="card">
+    <div class="card-body">
+      <label class="form-label">Número:</label>
+      <input type="number" [formControl]="n1" class="form-control" />
+    </div>
+
+    <div class="card-body">
+      <button type="button" (click)="generarTabla()" class="btn btn-primary">
+        Calcular
+      </button>
+    </div>
+    <div class="card-body">
+      <p id="tabla">{{ resultado }}</p>
+    </div>
+  </div>
+</div>

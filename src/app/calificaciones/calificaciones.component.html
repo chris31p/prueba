@@ -1,0 +1,42 @@
+<p class="m-3">Ejercicio 2!</p>
+<div class="div">
+<h1 class="m-3">Sistema de Calificaciones</h1>
+<p class="m-3">Realizar un sistema que permita ingresar tres calificaciones, mostrar la 
+  calificación final indicando si el alumno aprobó o reprobó la asignatura, 
+  considere:
+  <br/>
+  a. La calificación máxima es 10
+  <br/>
+  b. La calificación mínima es 1
+  <br/>
+  c. Se aprueba la asignatura con al menos 7pts de promedio
+  <br/>
+  d. Si el promedio es inferior a 7pts, entonces reprueba la asignatura</p>
+
+    <div class="card">
+      <div class="card-body">
+        <label class="form-label">Primera calificación</label>
+        <input type="number" [formControl]="n1" class="form-control" placeholder="Ingresa el primer aporte">
+      </div>
+  
+      <div class="card-body">
+        <label class="form-label">Segunda calificación</label>
+        <input type="number" [formControl]="n2" class="form-control" placeholder="Ingresa el segundo aporte">
+      </div>
+      
+      <div class="card-body">
+        <label class="form-label">Tercera calificación</label>
+        <input type="number" [formControl]="n3" class="form-control" placeholder="Ingresa el tercer aporte">
+      </div>
+
+
+      <div class="card-body">
+        <button class="btn btn-success" (click)="calcularPromedio()">Calcular</button>
+      </div>
+      <div class="card-body">
+        <h4>Su promedio es: {{resultado}}</h4>
+        <h5>{{respuesta}}</h5>
+      </div>
+    </div>
+  </div>
+

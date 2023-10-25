@@ -1,0 +1,29 @@
+<p class="m-3">Ejercicio 3!</p>
+<div class="div">
+  <h1 class="m-3">Programa que muestra la serie Fibonacci</h1>
+  <p class="m-3">
+    Crear un programa que permita mostrar la serie FIBONACCI teniendo en cuenta
+    las siguientes consideraciones:
+    <br />
+    a. El usuario deberá indicar hasta que posición de la serie desea imprimir
+    <br />
+    b. Realizar ese ejercicio con while o con for.
+  </p>
+  <div class="card">
+    <div class="card-body">
+      <label class="form-label">Ingrese un número:</label>
+      <input
+        type="text"
+        [formControl]="n1"
+        class="form-control"
+        placeholder="Ingresa un numero"
+      />
+    </div>
+    <div class="card-body">
+      <button class="btn btn-danger" (click)="calcularSerie()">Calcular</button>
+    </div>
+    <div class="card-body">
+      <h4>Secuencia: {{ resultado }}</h4>
+    </div>
+  </div>
+</div>

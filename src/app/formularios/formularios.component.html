@@ -1,0 +1,36 @@
+<div class="div">
+  <h1 class="m-3">Formulario</h1>
+  <div class="card">
+    <div class="card-body">
+      <label class="form-label"> Ingresa tu nombre </label>
+      <input
+        type="text"
+        [formControl]="nombre"
+        class="form-control"
+        placeholder="Ingresa tu nombre"
+      />
+    </div>
+
+    <div class="card-body">
+      <label class="form-label"> Ingresa tu correo </label>
+      <input
+        type="email"
+        [formControl]="correo"
+        class="form-control"
+        placeholder="Ingresa tu correo electronico"
+      />
+    </div>
+
+    <div class="card-body">
+      <button class="btn btn-success" (click)="guardar()">Enviar</button>
+    </div>
+    <div class="card-body">
+        <h5>
+          Se registró los siguientes datos: <br />
+          {{ name }}
+          <br />
+          {{ email }}
+        </h5>
+      </div>
+  </div>
+</div>

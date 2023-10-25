@@ -1,0 +1,51 @@
+<div class="div">
+  <p class="m-3">Ejercicio 1!</p>
+    <h1 class="m-3">Calculadora</h1>
+    <p class="m-3">
+      Programa que realice las operaciones matemáticas como:
+      <br />
+      a. Suma
+      <br />
+      a. Resta
+      <br />
+      a. Multiplicación
+      <br />
+      a. División
+    </p>
+    <div class="card">
+    <div class="card-body">
+      <label class="form-label">Ingresa el primer número</label>
+      <input
+        type="text"
+        [formControl]="n1"
+        class="form-control"
+        placeholder="Ingresa el primer numero"
+      />
+    </div>
+
+    <div class="card-body">
+      <label class="form-label">Ingresa el segundo número</label>
+      <input
+        type="text"
+        [formControl]="n2"
+        class="form-control"
+        placeholder="Ingresa el segundo numero"
+      />
+    </div>
+    <div class="card-body">
+      <label class="form-label">Selecciona la operación</label>
+      <select [formControl]="op">
+        <option value="sum">Suma</option>
+        <option value="res">Resta</option>
+        <option value="mul">Multiplicación</option>
+        <option value="div">División</option>
+      </select>
+    </div>
+    <div class="card-body">
+      <button class="btn btn-info" (click)="calcular()">Calcular</button>
+    </div>
+    <div class="card-body">
+      <h4>El resultado de la operación es: {{ resultado }}</h4>
+    </div>
+  </div>
+</div>

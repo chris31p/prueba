@@ -1,0 +1,23 @@
+<p class="m-3">Ejercicio 5!</p>
+<div class="div">
+  <h1 class="m-3">Números Pares</h1>
+  <p class="m-3">
+    Sistema que permita imprimir los primeros 10 números pares a partir del
+    número ingresado por el usuario
+  </p>
+  <div class="card">
+    <div class="card-body">
+      <label class="form-label">Número:</label>
+      <input type="number" [formControl]="n1" class="form-control" />
+    </div>
+
+    <div class="card-body">
+      <button type="button" (click)="calcularPares()" class="btn btn-success">
+        Calcular
+      </button>
+    </div>
+    <div class="card-body">
+      <p id="tabla">{{ resultado }}</p>
+    </div>
+  </div>
+</div>

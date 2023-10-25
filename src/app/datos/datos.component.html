@@ -1,0 +1,43 @@
+<div class="div">
+  <div class="card">
+    <h1 class="m-3">Datos</h1>
+    <form>
+      <div class="card-body md-2">
+        <label class="form-label mt-2"> Nombre: </label>
+        <input
+          class="mt-2"
+          type="text"
+          placeholder="Ingresa tu nombre"
+          class="form-control"
+          #nom
+        />
+      </div>
+
+      <div class="card-body md-2">
+        <label class="form-label mt-2"> Edad: </label>
+        <input
+          class="mt-2"
+          type="number"
+          placeholder="Ingresa tu edad"
+          class="form-control"
+          #ed
+        />
+      </div>
+
+      <div class="card-body">
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="mostrar(nom.value, ed.value)"
+        >
+          Mostrar
+        </button>
+      </div>
+    </form>
+    <p class="m-3">
+      {{ nombre }}
+      <br />
+      {{ edad }}
+    </p>
+  </div>
+</div>
